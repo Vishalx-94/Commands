@@ -1,1 +1,70 @@
-  
+Helpful git commands while working with github from VSCode
+--------------------------------------------------------
+
+
+
+Initialize git
+==============
+git init
+
+checkstatus
+===========
+git status
+
+Create a branch
+================
+git branch PA-vishal-dev
+
+Switch to branch
+=================
+git checkout PA-vishal-dev
+
+clone OR pull remote branch
+============================
+git clone https://github.com/Vishalx-94/Commands.git
+
+                    OR
+
+git pull https://github.com/Vishalx-94/Commands.git 
+
+
+
+
+Push the changes to remote branch
+===================================
+git remote add origin https://github.com/Vishalx-94/Commands.git
+
+Add the changes
+================
+git add .
+
+Commit the changes
+====================
+git commit -m "Initial Commit"
+
+Push the changes
+=================
+git push origin PA-vishal-dev
+
+
+
+
+
+
+Delete a branch
+================
+pull the changes
+-----------------
+git pull origin PA-Commands
+
+Switch to master branch
+-----------------------
+git checkout master
+
+delete local branch
+--------------------
+git branch -d PA-Commands
+
+delete remote branch
+---------------------
+git push --delete origin PA-Commands

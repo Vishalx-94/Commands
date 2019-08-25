@@ -1,3 +1,7 @@
+Helpful sfdx commands while working with github from VSCode
+--------------------------------------------------------
+
+
 Set default devhub org
 ======================
 sfdx force:config:set defaultdevhubusername=vishalx.suryavanshi@gmail.com
