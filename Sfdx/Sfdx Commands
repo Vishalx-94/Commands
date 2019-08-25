@@ -1,0 +1,73 @@
+Set default devhub org
+======================
+sfdx force:config:set defaultdevhubusername=vishalx.suryavanshi@gmail.com
+
+List All connected org list
+============================
+sfdx force:org:list --all
+
+login to devhub
+=================
+sfdx force:auth:web:login -d -a DevHub
+
+Create scratch org
+===================
+sfdx force:org:create  -f ./etc/dev.json -s -a Vishal -d 30 username=vishal@dev02.scratch01.org
+
+Genrate password for scratch org
+=================================
+sfdx force:user:password:generate --targetusername vishal@dev02.scratch01.org
+
+Open org
+=========
+sfdx force:org:open -u vishal@dev02.scratch01.org
+
+Org Status
+=========== 
+sfdx force:source:status -u vishal@dev02.scratch02.org
+
+Delete scratch org
+===================
+sfdx force:org:delete -u  vishal@dev02.scratch02.org
+
+Copy data from local(VSCode) to any scratch org
+================================================
+sfdx force:source:push -u vishal@dev02.scratch02.org
+
+Copy changes from scratch org to loacl(VSCode)
+================================================
+sfdx force:source:pull -u vishal@dev02.scratch02.org
+
+Get all changes from org
+=========================
+sfdx force:source:retrieve -p pkg/main/default -u vishal@dev02.scratch02.org
+
+Convert scratch org format to deploy format
+===========================================
+sfdx force:source:convert -d metadata
+
+Deploy after converting
+=======================
+sfdx force:mdapi:deploy -d metadata -u vishal@dev02.scratch02.org
+
+Check deployment status
+=======================
+sfdx force:mdapi:deploy:report -u vishal@dev02.scratch02.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
