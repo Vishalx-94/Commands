@@ -28,6 +28,14 @@ git clone https://github.com/Vishalx-94/Commands.git
 git pull https://github.com/Vishalx-94/Commands.git 
 
 
+Incase of below error please use this commands
+================================================
+Error : fatal: refusing to merge unrelated histories
+--------
+
+Solution :  git pull origin branchname --allow-unrelated-histories
+----------
+
 
 
 Push the changes to remote branch
