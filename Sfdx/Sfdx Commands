@@ -8,7 +8,7 @@ sfdx force:org:list --all
 
 login to devhub
 =================
-sfdx force:auth:web:login -d -a DevHub
+sfdx force:auth:web:login -d -a DevHub 
 
 Create scratch org
 ===================
