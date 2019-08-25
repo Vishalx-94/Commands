@@ -6,7 +6,7 @@ List All connected org list
 ============================
 sfdx force:org:list --all
 
-login to devhub
+login to devhub 
 =================
 sfdx force:auth:web:login -d -a DevHub
 
